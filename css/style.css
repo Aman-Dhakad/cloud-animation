@@ -1,0 +1,47 @@
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+.wrapper{
+width: 100%;
+height: 100vh;
+background-image: url(../img/pexels-rizknas-2835562.jpg);
+background-size: cover;
+background-repeat: no-repeat;
+position: relative;
+background-position: bottom;
+background-attachment: fixed;
+}
+
+.clouds{
+position: absolute;
+overflow: hidden;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+}
+
+.big{
+width: 50%;
+
+}
+.clouds img{
+position: absolute;
+bottom: 0;
+max-width: 100%;
+animation: clouds calc(5s*var(--i)) linear infinite;
+}
+@keyframes clouds{
+
+    0%{
+        transform: translate(-100%);
+    }
+
+    100%{
+        transform: translate(+200%);
+    }
+
+}
